@@ -198,6 +198,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../frostwire-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frostwire-jlibtorrent" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../frostwire-jlibtorrent" vcs="Git" />
   </component>
   <component name="libraryTable">
