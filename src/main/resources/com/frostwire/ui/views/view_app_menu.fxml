@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.VBox?>
-<fx:root type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml">
+<?import javafx.scene.control.Button?>
+<fx:root styleClass="app_menu" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml" stylesheets="@view_app_menu.css">
+    <Button text="Test"></Button>
 </fx:root>

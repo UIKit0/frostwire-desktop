@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <fx:root type="javafx.scene.layout.BorderPane" xmlns:fx="http://javafx.com/fxml">
     <top>
-        <AppHeaderView></AppHeaderView>
+        <AppHeaderView id="header"/>
     </top>
     <left>
-        <AppMenuView></AppMenuView>
+        <AppMenuView id="menu"/>
     </left>
 </fx:root>

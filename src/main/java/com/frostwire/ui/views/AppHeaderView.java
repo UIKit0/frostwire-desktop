@@ -1,5 +1,7 @@
 package com.frostwire.ui.views;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
@@ -11,7 +13,13 @@ public class AppHeaderView extends HBox {
         Views.load(this, "app_header");
 
         buttonMenu = (Button) lookup("#buttonMenu");
+    }
 
-        buttonMenu.setOnAction(e -> System.out.println("Hello"));
+    public final void setOnMenuAction(EventHandler<ActionEvent> value) {
+        buttonMenu.onActionProperty().set(value);
+    }
+
+    public final EventHandler<ActionEvent> getOnMenuAction() {
+        return buttonMenu.onActionProperty().get();
     }
 }
