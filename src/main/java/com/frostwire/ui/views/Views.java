@@ -9,9 +9,9 @@ public final class Views {
     private Views() {
     }
 
-    public static void load(Object v, String name) {
+    static void load(Object v, String name) {
 
-        String fxml = "/com/frostwire/ui/views/" + name + ".fxml";
+        String fxml = "/com/frostwire/ui/views/view_" + name + ".fxml";
         FXMLLoader loader = new FXMLLoader(Views.class.getResource(fxml));
 
         loader.setRoot(v);
