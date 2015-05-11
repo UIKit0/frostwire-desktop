@@ -1,8 +1,7 @@
 package com.frostwire.ui;
 
+import com.frostwire.ui.views.AppView;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -14,9 +13,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/frostwire/ui/views/view_main.fxml"));
+        AppView app = new AppView();
 
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(app);
 
         primaryStage.setScene(scene);
         primaryStage.show();
